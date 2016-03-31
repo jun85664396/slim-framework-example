@@ -1,0 +1,44 @@
+{
+  "name": "slim-framework-example",
+  "description": "f m",
+  "authors": [
+    {
+    "name": "jun85664396",
+    "email": "jun85664396@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+    "type":"package",
+    "package": {
+      "name": "jun85664396/php-view",
+      "version":"1.0",
+      "source": {
+        "url": "https://github.com/jun85664396/PHP-View.git",
+        "type": "git",
+        "reference":"master"
+      },
+      "autoload": {
+        "psr-4": {
+          "Slim\\Views\\": "src"
+        }
+      }
+    }
+  }
+  ],
+  "require": {
+    "slim/slim": "^3.0",
+    "jun85664396/php-view": "1.0",
+    "doctrine/orm": "^2.5",
+    "symfony/yaml": "^3.0",
+    "vlucas/phpdotenv": "^2.2"
+  },
+  "autoload": {
+    "psr-0": {
+      "": ["config/db/", "app/controllers/"]
+    },
+    "psr-4": {
+      "": "lib/classes/"
+    }
+  }
+}
